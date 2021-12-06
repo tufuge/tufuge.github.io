@@ -48,75 +48,135 @@ color:LIME;
 
 
 <!-- 导航栏 -->
-  <style type="text/css">
-   *{
-    margin: 0;
-    padding: 0;
-   }
-   div{
-    width: 450px;
-    height: 40px;
-    background-color: green;
-    margin: 0 auto;/*div居中。内容居中用text-align:center*/    
-   }
-    
-      
-   ul li{
-    list-style: none;
-    width: 150px;
-    float: left;/*因为ul显示的是横排文字，所以向左浮动，浮上去*/
-    text-align: center;
-    line-height: 40px;
-    color: green;
-   }
-   a{
-    display: block;
-    color: aqua;
-    text-decoration: none;
-   }
-   a:hover{/*伪类hover，通过它，放在上面变色*/
-    color: royalblue;
-    background-color: rosybrown;
-    
-   }
-   ul li ul li{
-    display: none;/*此元素不会被展示*/
-    margin-top: 3px;/*二级目录离一级目录距离*/    
-   }
-   ul li:hover ul li{
-    background-color: #008000;
-    display: block;
-    
-   }
-  </style>
- </head>
- <body>
-  <div >
-   <ul>
-    <li><a href="#">一</a>
-     <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-     </ul>
-    </li>
-    <li><a href="#">二</a>
-     <ul>
-      <li><a href="#">1</a></li>
-      <li><a>2</a></li>
-      <li><a>3</a></li>
-      <li><a>4</a></li>
-     </ul>
-    </li>
-    <li><a href="#">三</a>
-     <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-     </ul>
-    </li>
-   </ul>
-  </div>
- </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>吃货的导航栏</title>
+    </head>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #nav{
+            width: 360px;
+            height: 40px;
+            background: gray;
+            margin: 0 auto;
+        }
+        #nav li{
+            line-height: 40px;
+            float: left;
+            list-style: none;
+            height: 40px;
+            position: relative;
+        }
+        #nav a{
+            padding: 0 20px;
+            color: black;
+            display: block;
+            text-decoration: none;
+            height: 40px;
+        }
+        #nav a:hover{
+            background: #058;
+            color:white;
+        }
+        #nav li ul{
+
+            display: none;
+            position: absolute;
+            top: 40px;
+            left:0px;
+        }
+        #nav li ul li{
+            float: none;
+            margin: 2px;
+            width:75px;
+            text-align: center;
+        }
+        #nav li ul li a{
+            background: #ccc;
+        }
+        #nav li ul li a:hover{
+            background: deeppink;
+        }
+        #nav li:hover ul{
+            display: block;
+        }
+    </style>
+    <body>
+        <ul id="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">肉类</a>
+                <ul>
+                    <li><a href="#">牛肉</a></li>
+                    <li><a href="#">猪肉</a></li>
+                    <li><a href="#">鸡肉</a></li>
+                </ul>
+            </li>
+            <li><a href="#">水果</a>
+                <ul>
+                    <li><a href="#">西瓜</a></li>
+                    <li><a href="#">香蕉</a></li>
+                    <li><a href="#">苹果</a></li>
+                </ul>
+            </li>
+            <li><a href="#">零食</a></li>
+            <li><a href="#">蔬菜</a>
+                <ul>
+                    <li><a href="#">白菜</a></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 260px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid #01af63;
+			}
+			
+			form .search {
+				
+				width: 90px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 40px;
+				background-color: #01af63;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<form target="_blank" method="get" action="https://www.baidu.com/s">
+			<input type="text" placeholder="请输入关键词" name="word" class="text" />
+			<input type="submit" value="搜索" class="search">
+		</form>
+	</body>
+</html>
+
