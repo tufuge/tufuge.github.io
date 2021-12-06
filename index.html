@@ -73,89 +73,103 @@ color:LIME;
 
 <!-- 导航栏 https://blog.csdn.net/qq_20417227/article/details/52266686-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>吃货的导航栏</title>
-    </head>
-    <style type="text/css">
-        *{
-            margin:0px;
-            padding:0px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        li{
+            list-style-type: none;
         }
-        #nav{
-            width: 360px;
-            height: 40px;
-            background: gray;
-            margin: 0 auto;
+        #menu {
+            width: 370px;
+            margin: 30px auto 0px;
+            height: 45px;
+            background-color: BLUE;
         }
-        #nav li{
-            line-height: 40px;
+        #menu li{
             float: left;
-            list-style: none;
-            height: 40px;
-            position: relative;
-        }
-        #nav a{
-            padding: 0 20px;
-            color: black;
-            display: block;
-            text-decoration: none;
-            height: 40px;
-        }
-        #nav a:hover{
-            background: #058;
-            color:white;
-        }
-        #nav li ul{
-
-            display: none;
-            position: absolute;
-            top: 40px;
-            left:0px;
-        }
-        #nav li ul li{
-            float: none;
-            margin: 2px;
-            width:75px;
+            width: 92px;
+            line-height:39px;
             text-align: center;
+            position:relative;
+            border:none;
         }
-        #nav li ul li a{
-            background: #ccc;
+        #menu li a {
+            font-size:16px; color: #e6f8e9;
+            display:block;
+            outline:0;
+            text-decoration:none; 
         }
-        #nav li ul li a:hover{
-            background: deeppink;
+        #menu li:hover a {
+            color: #ff0000; /*导航栏文字颜色 */
         }
-        #nav li:hover ul{
-            display: block;
+        #menu li:hover .dropdown_1column {
+            left:0px;
+            top:38px;
+        }
+        .dropdown_1column{ /* 下拉菜单边框颜色*/
+            margin: 0px auto;
+            float: left;
+            position: absolute;
+            left: -999em;
+            text-align: left;
+            border: 1px solid #066591;
+            border-top: none;
+            background: #F4F4F4;
+            width: 140px;
+        }
+        #menu li:hover div a { /* 下拉菜单文字颜色*/
+        font-size:12px
+        ;color:#444;
+        }
+
+        #menu li:hover div a:hover{color:#21910e;} /*下拉带单鼠标停留颜色*/
+
+        #menu li ul {
+        list-style:none;padding:10px 5px;
+        margin:0;
+        }
+        #menu li ul li {
+        font-size:12px;
+        line-height:26px;
+        position:relative;
+        padding:0;margin:0;
+        float:none;
+        text-align:left;
+        width:130px;
+        }
+        #menu li ul li:hover {
+        background:none;
+        border:none;padding:0;
+        margin:0;
         }
     </style>
-    <body>
-        <ul id="nav">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">肉类</a>
-                <ul>
-                    <li><a href="/index.html">牛肉</a></li>
-                    <li><a href="#">猪肉</a></li>
-                    <li><a href="#">鸡肉</a></li>
-                </ul>
-            </li>
-            <li><a href="#">水果</a>
-                <ul>
-                    <li><a href="#">西瓜</a></li>
-                    <li><a href="#">香蕉</a></li>
-                    <li><a href="#">苹果</a></li>
-                </ul>
-            </li>
-            <li><a href="#">零食</a></li>
-            <li><a href="#">蔬菜</a>
-                <ul>
-                    <li><a href="#">白菜</a></li>
-                </ul>
-            </li>
-        </ul>
-    </body>
+</head>
+<body>
+    <div id="menu">
+    <ul>
+        <li> <a href="" class="nodrop">首页</a></li>
+        <li><a href="" class="drop">最火下载站</a>
+        <div class="dropdown_1column">
+            <div class="col_1">
+                    <ul class="simple">
+                            <li><a href="">网站建设</a></li>
+                            <li><a href="">导航条代码</a></li>
+                            <li><a href="">电子商务</a></li>
+                    </ul>
+            </div>
+       
+        </div>
+        </li>
+        <li><a href="" class="nodrop">联系我们</a></li>
+    </ul>
+    </div>
+
+    
+</body>
 </html>
+
 
 
 
@@ -202,3 +216,30 @@ color:LIME;
 
 
 
+<table border="1" style="border-collapse: collapse;" align="center" >
+    <tr>
+        <th>网站</th>
+        <th>域名</th>
+        <th>分类</th>
+    </tr>
+    <tr>
+        <td>C语言中文网</td>
+        <td>c.biancheng.net</td>
+        <td>在线教育</td>
+    </tr>
+    <tr>
+        <td>百度</td>
+        <td>www.baidu.com</td>
+        <td>搜索引擎</td>
+    </tr>
+    <tr>
+        <td>当当</td>
+        <td>www.dangdang.com</td>
+        <td>图书电商</td>
+    </tr>
+    <tr>
+        <td>网易</td>
+        <td>www.163.com</td>
+        <td>综合门户</td>
+    </tr>
+</table>
