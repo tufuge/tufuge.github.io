@@ -11,14 +11,23 @@
 
 
 
+<!-- 设置超链接颜色https://blog.csdn.net/sinat_33718563/article/details/87460833 -->
+<head>
+ <style type="text/css">
+        a:link {color: #00FF00} /* 未访问的链接 */
+        a:visited {color: #FF0000} /* 已访问的链接 */
+        a:hover {color: #FF00FF} /* 鼠标移动到链接上 */
+        a:active {color: #0000FF} /* 选定的链接 */
+    </style>
+</head>
 
-<style type="text/css">
-<!--
-body {
-text-decoration:underline;
-}
--->
-</style>
+
+
+<!-- 超链接不显示下划线https://www.w3cschool.cn/html5/question-10231595.html -->
+<head>
+<style>a{ TEXT-DECORATION:none }</style>
+</head>
+
 
 
 
@@ -33,6 +42,8 @@ text-decoration:underline;
 <head>
 <body bgcolor="palevioletred">
 </head>
+
+
 
 
 <!-- 整体居中 -->
@@ -52,8 +63,10 @@ color:LIME;
 </style>
 
 
+
+
 <!-- 网站名称 -->
-<h1 ><a href="/index.html">私人专用</a></h1>
+<h1 ><a href="baidu.com">私人专用</a></h1>
 
 
 
@@ -122,7 +135,7 @@ color:LIME;
             <li><a href="#">首页</a></li>
             <li><a href="#">肉类</a>
                 <ul>
-                    <li><a href="#">牛肉</a></li>
+                    <li><a href="/index.html">牛肉</a></li>
                     <li><a href="#">猪肉</a></li>
                     <li><a href="#">鸡肉</a></li>
                 </ul>
@@ -186,4 +199,6 @@ color:LIME;
 		</form>
 	</body>
 </html>
+
+
 
