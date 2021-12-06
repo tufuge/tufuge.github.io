@@ -24,7 +24,7 @@
 <head/>
 
 
-<!-- 居中 -->
+<!-- 整体居中 -->
 <head> 
 <style> 
 body{text-align:center} 
@@ -45,3 +45,86 @@ color:LIME;
 <h1 >私人专用</h1>
 
 
+
+
+<!-- 导航栏 -->
+  <style type="text/css">
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   div{
+    width: 600px;
+    height: 40px;
+    background-color: green;
+    margin: 0 auto;/*div居中。内容居中用text-align:center*/    
+   }
+    
+      
+   ul li{
+    list-style: none;
+    width: 150px;
+    float: left;/*因为ul显示的是横排文字，所以向左浮动，浮上去*/
+    text-align: center;
+    line-height: 40px;
+    color: green;
+   }
+   a{
+    display: block;
+    color: aqua;
+    text-decoration: none;
+   }
+   a:hover{/*伪类hover，通过它，放在上面变色*/
+    color: royalblue;
+    background-color: rosybrown;
+    
+   }
+   ul li ul li{
+    display: none;/*此元素不会被展示*/
+    margin-top: 3px;/*二级目录离一级目录距离*/    
+   }
+   ul li:hover ul li{
+    background-color: #008000;
+    display: block;
+    
+   }
+  </style>
+ </head>
+ <body>
+  <div >
+   <ul>
+    <li><a href="#">前端</a>
+     <ul>
+      <li><a href="#">html</a></li>
+      <li><a href="#">css</a></li>
+      <li><a href="#">js</a></li>
+      <li><a href="#">jquery</a></li>
+     </ul>
+    </li>
+    <li><a href="#">后端</a>
+     <ul>
+      <li><a href="#">java</a></li>
+      <li><a>mysql</a></li>
+      <li><a>linux</a></li>
+      <li><a>spring</a></li>
+     </ul>
+    </li>
+    <li><a href="#">进阶</a>
+     <ul>
+      <li><a href="#">算法</a></li>
+      <li><a href="#">redis</a></li>
+      <li><a href="#">hadoop</a></li>
+      <li><a href="#">kafka</a></li>
+     </ul>
+    </li>
+    <li><a href="#">java高级</a>
+     <ul>
+      <li><a href="#">hashmap</a></li>
+      <li><a href="#">红黑树</a></li>
+      <li><a href="#">二叉树</a></li>
+      <li><a href="#">反射</a></li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+ </body>
