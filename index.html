@@ -80,7 +80,51 @@ color:LIME;
 <!-- 网站名称 -->
 <H3><a href="baidu.com">私人专用</a></h3>
 
+
+
+
+
+
+<!-- 当前时间https://blog.csdn.net/weixin_43883917/article/details/113871424 -->
+<div class="showTime" style="color:LIME">当前时间：2021年2月19-20时35分16秒</div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); //開始运行
+  function time() {
+    clearTimeout(t); //清除定时器
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); //获取时
+    var m = dt.getMinutes(); //获取分
+    var s = dt.getSeconds(); //获取秒
+    document.querySelector(".showTime").innerHTML =
+      "当前时间：" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "号" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); //设定定时器，循环运行
+  }
+</script>
+
+
+
+
+
 <HR align=center width=400 color=LIME SIZE=1>
+
+
+
 
 
 
@@ -182,6 +226,7 @@ body{
 
 
 <!-- 表格http://m.biancheng.net/view/7459.html -->
+
 <table border="1" style="border-collapse: collapse;" align="center"  bordercolor="lime"  style="color: lime;" >
     <tr>
         <th width="100px"><font color="LIME">特殊</font> </th>
@@ -231,3 +276,20 @@ body{
         <td><a href="https://s.w7.cc/" target="_blank">微擎</a></td>
         <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
     </tr>
+
+
+
+
+
+
+<!-- 内容置底https://www.cnblogs.com/wayneliu007/p/10324279.html -->
+<html>
+  <body>
+    <div class="footer"><font color="LIME">Copyright © 1999-2011 Someone. All rights reserved. <font color="#FF0000"></div>
+  </body>
+</html>
+<style >  
+  .header{background-color: #ffe4c4;}
+  .main{padding-bottom:100px;background-color: #bdb76b;}/* main的padding-bottom值要等于或大于footer的height值 */
+  .footer{position:absolute;bottom:0;width:100%;height:100px;background-color: BLACK;}
+</style>
