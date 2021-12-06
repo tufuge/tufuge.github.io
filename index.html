@@ -11,6 +11,18 @@
 
 
 
+
+
+<!-- 输入框的底色 https://bbs.csdn.net/topics/391978604 -->
+<head>
+<style>
+	input { background:BLACK;}
+</style>
+</head>
+ 
+
+
+
 <!-- 设置超链接颜色https://blog.csdn.net/sinat_33718563/article/details/87460833 -->
 <head>
  <style type="text/css">
@@ -40,7 +52,7 @@
 
 <!-- 背景颜色 -->
 <head>
-<body bgcolor="palevioletred">
+<body bgcolor="BLACK">
 </head>
 
 
@@ -66,109 +78,14 @@ color:LIME;
 
 
 <!-- 网站名称 -->
-<h1 ><a href="baidu.com">私人专用</a></h1>
+<H3><a href="baidu.com">私人专用</a></h3>
+
+<HR align=center width=300 color=LIME SIZE=1>
 
 
 
+<!-- 导航栏 https://blog.csdn.net/weixin_30835933/article/details/96464593-->
 
-<!-- 导航栏 https://blog.csdn.net/qq_20417227/article/details/52266686-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        li{
-            list-style-type: none;
-        }
-        #menu {
-            width: 370px;
-            margin: 30px auto 0px;
-            height: 45px;
-            background-color: BLUE;
-        }
-        #menu li{
-            float: left;
-            width: 92px;
-            line-height:39px;
-            text-align: center;
-            position:relative;
-            border:none;
-        }
-        #menu li a {
-            font-size:16px; color: #e6f8e9;
-            display:block;
-            outline:0;
-            text-decoration:none; 
-        }
-        #menu li:hover a {
-            color: #ff0000; /*导航栏文字颜色 */
-        }
-        #menu li:hover .dropdown_1column {
-            left:0px;
-            top:38px;
-        }
-        .dropdown_1column{ /* 下拉菜单边框颜色*/
-            margin: 0px auto;
-            float: left;
-            position: absolute;
-            left: -999em;
-            text-align: left;
-            border: 1px solid #066591;
-            border-top: none;
-            background: #F4F4F4;
-            width: 140px;
-        }
-        #menu li:hover div a { /* 下拉菜单文字颜色*/
-        font-size:12px
-        ;color:#444;
-        }
-
-        #menu li:hover div a:hover{color:#21910e;} /*下拉带单鼠标停留颜色*/
-
-        #menu li ul {
-        list-style:none;padding:10px 5px;
-        margin:0;
-        }
-        #menu li ul li {
-        font-size:12px;
-        line-height:26px;
-        position:relative;
-        padding:0;margin:0;
-        float:none;
-        text-align:left;
-        width:130px;
-        }
-        #menu li ul li:hover {
-        background:none;
-        border:none;padding:0;
-        margin:0;
-        }
-    </style>
-</head>
-<body>
-    <div id="menu">
-    <ul>
-        <li> <a href="" class="nodrop">首页</a></li>
-        <li><a href="" class="drop">最火下载站</a>
-        <div class="dropdown_1column">
-            <div class="col_1">
-                    <ul class="simple">
-                            <li><a href="">网站建设</a></li>
-                            <li><a href="">导航条代码</a></li>
-                            <li><a href="">电子商务</a></li>
-                    </ul>
-            </div>
-       
-        </div>
-        </li>
-        <li><a href="" class="nodrop">联系我们</a></li>
-    </ul>
-    </div>
-
-    
-</body>
-</html>
 
 
 
@@ -182,33 +99,33 @@ color:LIME;
 			form .text {
 				display: inline-block;
 				border: 0;
-				width: 260px;
+				width: 160px;
 				height: 35px;
 				font-size: 14px;
 				outline: none;
 				
-				border: 2px solid #01af63;
+				border: 2px solid lime;
 			}
 			
 			form .search {
 				
-				width: 90px;
+				width: 50px;
 				height: 38px;
 				border: 0;
 				outline: none;
 				cursor: pointer;
 				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
 				text-align: center;
-				line-height: 40px;
-				background-color: #01af63;
-				color: #FFFFFF;
+				line-height: 10px;
+				background-color: black;
+				color: lime;
 			}
 		</style>
 	</head>
 	<body>
-		
-		<form target="_blank" method="get" action="https://www.baidu.com/s">
-			<input type="text" placeholder="请输入关键词" name="word" class="text" />
+	<!-- 让输入文字变颜色https://zhidao.baidu.com/question/10478693.html -->	
+		<form target="_blank" method="get" action="https://www.baidu.com/s" >
+			<input type="text" placeholder="" name="word" class="text" / style="color:LIME;">
 			<input type="submit" value="搜索" class="search">
 		</form>
 	</body>
@@ -216,30 +133,42 @@ color:LIME;
 
 
 
-<table border="1" style="border-collapse: collapse;" align="center" >
+
+
+<HR align=center width=300 color=LIME SIZE=1>
+
+
+
+
+<table border="1" style="border-collapse: collapse;" align="center"  bordercolor="lime"  style="color: lime;" >
     <tr>
-        <th>网站</th>
-        <th>域名</th>
-        <th>分类</th>
+        <th>特殊</th>
+        <th>常用</th>
+        <th>运营</th>
+        <th>工具</th>
     </tr>
     <tr>
-        <td>C语言中文网</td>
-        <td>c.biancheng.net</td>
+        <td><a href="baidu.com">私人专用</a></td>
+        <td>c.bia</td>
         <td>在线教育</td>
+        <td>综合门户</td>
     </tr>
     <tr>
         <td>百度</td>
-        <td>www.baidu.com</td>
+        <td>www.b</td>
         <td>搜索引擎</td>
+        <td>综合门户</td>
     </tr>
     <tr>
         <td>当当</td>
-        <td>www.dangdang.com</td>
+        <td>www.dang</td>
         <td>图书电商</td>
+        <td>综合门户</td>
     </tr>
     <tr>
         <td>网易</td>
         <td>www.163.com</td>
         <td>综合门户</td>
+        <td>综合门户</td>
     </tr>
-</table>
+
