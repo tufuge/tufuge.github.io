@@ -1,9 +1,9 @@
-<!-- ���뷽ʽ�ͱ��� -->
+<!-- 编码方式和标题 -->
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>˽��ר��</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>私人专用</title>
 </head>
 <body>    
 </body>
@@ -11,19 +11,304 @@
 
 
 
-<!-- �ֻ�����Ӧ -->
+
+
+<!-- 输入框的底色 https://bbs.csdn.net/topics/391978604 -->
+<head>
+<style>
+	input { background:BLACK;}
+</style>
+</head>
+ 
+
+
+
+<!-- 设置超链接颜色https://blog.csdn.net/sinat_33718563/article/details/87460833 -->
+<head>
+ <style type="text/css">
+        a:link {color: LIME} /* 未访问的链接 */
+        a:visited {color: LIME} /* 已访问的链接 */
+        a:hover {color: LIME} /* 鼠标移动到链接上 */
+        a:active {color: LIME} /* 选定的链接 */
+    </style>
+</head>
+
+
+
+<!-- 超链接不显示下划线https://www.w3cschool.cn/html5/question-10231595.html -->
+<head>
+<style>a{ TEXT-DECORATION:none }</style>
+</head>
+
+
+
+
+<!-- 手机自适应 -->
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-<head/>
+</head>
 
 
 
-<!-- ������ɫ -->
+<!-- 背景颜色 -->
 <head>
-<body bgcolor="palevioletred">
-<head/>
-
-����
+<body bgcolor="BLACK">
+</head>
 
 
 
+
+<!-- 整体居中 -->
+<head> 
+<style> 
+body{text-align:center} 
+</style> 
+</head> 
+
+
+
+<!-- 设置H1字体全局颜色 -->
+<style>
+h1{
+color:LIME;
+}
+</style>
+
+
+
+
+<!-- 网站名称 -->
+<H3><a href="baidu.com">私人专用</a></h3>
+
+
+
+
+
+
+<!-- 当前时间https://blog.csdn.net/weixin_43883917/article/details/113871424 -->
+<div class="showTime" style="color:LIME">当前时间：2021年2月19-20时35分16秒</div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); //開始运行
+  function time() {
+    clearTimeout(t); //清除定时器
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); //获取时
+    var m = dt.getMinutes(); //获取分
+    var s = dt.getSeconds(); //获取秒
+    document.querySelector(".showTime").innerHTML =
+      "当前时间：" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "号" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); //设定定时器，循环运行
+  }
+</script>
+
+
+
+
+
+<HR align=center width=400 color=LIME SIZE=1>
+
+
+
+
+
+
+<!-- 导航栏 https://blog.csdn.net/qq_33587638/article/details/50445060-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>二级导航制作</title>
+<style>
+body{
+	margin:0px;
+	padding:0px;
+}
+#nav{
+	width:400px;
+	height:20px;
+	margin:auto;
+	list-style:none;
+	padding:0;
+}
+#nav li{
+	width:100px;
+	float:left;
+	line-height:15px;
+	text-align:center;
+	display:block;
+}
+#nav li a {
+	color:LIME;
+	text-decoration:none;
+}
+</style>
+</head>
+ 
+<body>
+  <ul id="nav">
+    <li><a href="index.html" >首页</a></li>
+    <li><a href="#" >导航</a></li>
+    <li><a href="#" >导航</a></li>
+    <li><a href="#" >导航</a></li>
+  </ul>
+</body>
+</html>
+
+
+<HR align=center width=400 color=LIME SIZE=1>
+<HR align=center width=400 color=LIME SIZE=1>
+
+
+
+
+
+<!-- 百度搜索https://blog.csdn.net/xxx_datou/article/details/115311805 -->
+		<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 160px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid lime;
+			}
+			
+			form .search {
+				
+				width: 50px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 10px;
+				background-color: black;
+				color: lime;
+			}
+		</style>
+	</head>
+	<body>
+	<!-- 让输入文字变颜色https://zhidao.baidu.com/question/10478693.html -->	
+		<form target="_blank" method="get" action="https://www.baidu.com/s" >
+			<input type="text" placeholder="" name="word" class="text" / style="color:LIME;">
+			<input type="submit" value="搜索" class="search">
+		</form>
+	</body>
+</html>
+
+
+
+
+
+<HR align=center width=300 color=LIME SIZE=1>
+
+
+
+
+<!-- 表格http://m.biancheng.net/view/7459.html -->
+
+<table border="1" style="border-collapse: collapse;" align="center"  bordercolor="lime"  style="color: lime;" >
+    <tr>
+        <th width="100px"><font color="LIME">特殊</font> </th>
+        <th width="100px"><font color="LIME">常用</font></th>
+        <th width="100px"><font color="LIME">运营</font></th>
+        <th width="100px"><font color="LIME">工具</font></th>
+    </tr>
+    <tr>
+        <td ><a href="https://ywxzw.com" target="_blank">原味闲置网</a></td>
+        <td><a href="http://www.bing.com" target="_blank">必应</a></td>
+        <td><a href="https://www.vpsor.cn/center/personal" target="_blank">硅云</a></td>
+        <td><a href="https://zhonglian.lanzouw.com/" target="_blank">蓝奏云</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://lzpth.com" target="_blank">恋足癖同好</a></td>
+        <td><a href="https://zhihu.com" target="_blank">知乎</a></td>
+        <td><a href="http://www.juming.com/" target="_blank">聚名网</a></td>
+        <td><a href="http://mail.0du.win/" target="_blank">临时邮箱</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://www.wnflb99.com/" target="_blank">福利吧</a></td>
+        <td><a href="https://www.huifaka.com/" target="_blank">汇发卡</a></td>
+        <td><a href="https://cmwtat.cloudmoe.com/cn.html" target="_blank">青蛙快传</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://cl.5837y.xyz/index.php/" target="_blank">草榴社区</a></td>
+        <td><a href="https://www.fakaba.cn/" target="_blank">发卡吧</a></td>
+        <td><a href="https://www.qtool.net/webrun" target="_blank">代码运行</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://wx.qq.com/">微信网页版</a></td>
+        <td><a href="https://web.umeng.com/main.php?c=site&a=show" target="_blank">CNZZ</a></td>
+        <td><a href="www.yasuotu.com/shuiyin" target="_blank">PNG图片</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://www.huzhan.com/" target="_blank">互站网</a></td>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+        <td><a href="https://s.w7.cc/" target="_blank">微擎</a></td>
+        <td><a href="https://www.baidu.com" target="_blank">&nbsp</a></td>
+    </tr>
+
+
+
+<head>	
+<script languange="JavaScript">
+        var password=""
+        password=prompt('请输入密码(私人专用):','');
+        function custom_close()
+        {
+            window.opener=null;
+            window.open('','_self');
+            window.close();        
+        }   
+        if  (password !='1')
+            {alert("密码不正确")
+            
+            custom_close();            
+            alert("正在退出！")//加这一段是为了避免有些浏览器不支持关闭浏览器的js ,所以请求跳转到一个新页面！
+            window.location.href='http://www.baidu.com';
+            }
+</script>
+</head>	
+	
+
+
+<!-- 内容置底https://www.cnblogs.com/wayneliu007/p/10324279.html -->
+<html>
+  <body>
+    <div class="footer"><font color="LIME">Copyright © 1999-2011 Someone. All rights reserved. <font color="#FF0000"></div>
+  </body>
+</html>
+<style >  
+  .header{background-color: #ffe4c4;}
+  .main{padding-bottom:100px;background-color: #bdb76b;}/* main的padding-bottom值要等于或大于footer的height值 */
+  .footer{position:absolute;bottom:0;width:100%;height:100px;background-color: BLACK;}
+</style>
