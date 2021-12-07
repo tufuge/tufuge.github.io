@@ -237,7 +237,7 @@ body{
 
 <!-- 现代写法，推荐(不支持 IE) -->
 <script>
-  fetch('https://v1.hitokoto.cn')
+  fetch('https://v1.hitokoto.cn/?c=i')
     .then(response => response.json())
     .then(data => {
       const hitokoto = document.getElementById('hitokoto_text')
@@ -249,7 +249,7 @@ body{
 
 <!-- 如果你配置了 axios -->
 <script>
-  axios.get('https://v1.hitokoto.cn')
+  axios.get('https://v1.hitokoto.cn/?c=i')
     .then(({ data }) => {
       const hitokoto = document.getElementById('hitokoto_text')
       hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
@@ -262,7 +262,7 @@ body{
 <script>
   $.ajax({
     type: 'GET',
-    url: 'https://v1.hitokoto.cn',
+    url: 'https://v1.hitokoto.cn/?c=i',
     dataType: 'jsonp',
     jsonp: 'callback',
     jsonpCallback: 'hitokoto',
@@ -281,7 +281,7 @@ body{
 <!-- 老式写法，兼容性最好; 支持 IE -->
 <script>
   var xhr = new XMLHttpRequest();
-  xhr.open('get', 'https://v1.hitokoto.cn');
+  xhr.open('get', 'https://v1.hitokoto.cn/?c=i');
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       var data = JSON.parse(xhr.responseText);
